@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
     
     <title>Solar Sentinel</title>
+    
 </head>
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script> <!-- Librería Socket.IO -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Librería jQuery -->
 <body>
     <div class="head">
         <figure class="logo">
@@ -23,8 +26,8 @@
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#graphics">Graphics</a>
+            <a href="#aboutus">About us</a>
             <a href="#contact">Contact</a>
-            <a href="#contact">About us</a>
         </nav>
     </div>
     <header class="content header" id="home">
@@ -44,73 +47,49 @@
   
     </header>
     <section class="content start">
-        <h2 class="title" id="start"> Lets get started! </h2>
+        <h2 class="title" id="start"> Let's get started! </h2>
         <br>
         
-        <h3 class="subtitle">Step 1: Upload your <u>.csv</u> file or <u>select your dates</u></h3>
-
+        <h3 class="subtitle">Download the .exe for windows </h3>
+    
         <div class="drag-area">
-            <br>
-            <h2> Drag and drop your documents </h2>
-            <br>
-            <span>or</span>
-            <br>
-            <button id="upload"> select your files</button>
-            <input type="file" name = "" id="input-file" hidden multiple />
-            <br>
+            
+            <a href="https://drive.google.com/uc?export=download&id=1Ui1T17hvQp_CqHwCm96DVi_pCZ9xKPpf" target="_blank" class="download-btn"><i class="fa-solid fa-download"></i> <br> Download Now</a>
         </div>
+        
         <div id="preview"></div>
-
-        <br>
-        <br>
-        <br>
-        <h1>Dates selector</h1>
-        <br>
-        <div class="date-selector">
-          <label for="start-date">Start date:</label>
-          <input type="date" id="start-date" value="2018-07-22" min="2016-01-01" max="2022-12-31">
-          <label for="end-date">End date:</label>
-          <input type="date" id="end-date" value="2018-07-22" min="2016-01-01" max="2022-12-31">
-        </div>
-        <div id="result">
-          <!-- Aquí se mostrarán las fechas intermedias -->
-        </div>
+    
         <script src="script.js"></script>
-
-     
     </section>
+    
 
-    <section class="content sau">
-        <h2 class="title" id="graphics"> Graphics </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Excepturi sed beatae sapiente reprehenderit necessitatibus
-            incidunt, sit accusamus quia voluptatum repudiandae, placeat cumque ipsam temporibus rem, sunt corrupti dignissimos aliquam quae.
+    <section class="content sau" id="graphics">
+        <h2 class="title" > Graphics </h2>
+        <p> This field will be updated with tha actual time data from DSCOVR, but the API has present some errors (Fixing for the future... | Also you can add it on index.html).
         </p>
         <div class="box-container">
             <div class="box">
                 <i class="fa-solid fa-satellite-dish"></i>
-                <h3>Campo Magnético</h3>
-                <a href="#" class="btn">Mostrar Gráfica</a>
+                <h3>Magnetic camp from DSCOVR</h3>
+                <a href="#" class="btn">*x*</a>
             </div>
             <div class="box">
                 <i class="fa-solid fa-satellite"></i>
-                <h3>Copa de Faraday</h3>
-                <a href="#" class="btn">Mostrar Gráfica</a>
+                <h3>Faraday Cup from DSCOVR</h3>
+                <a href="#" class="btn">*x*</a>
             </div>
             <div class="box">
                 <i class="fa-solid fa-meteor"></i>
-                <h3>Otro Dato Genial</h3>
-                <a href="#" class="btn" id="showImageBtn">Mostrar Gráfica</a>
+                <h3>Some fun fact more.</h3>
+                <a href="#" class="btn" id="showImageBtn">*x*</a>
             </div>
         </div>
     </section>
-    <section class="content about">
+    <section class="content about" id="aboutus">
         <h2 class="title"> About Us </h2>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Magni maiores officiis rerum eius veniam aut ut est ex commodi atque? 
-            Harum eveniet id porro non blanditiis dolorem magni impedit totam!
+        <p> Solar Sentinel is a group made of students of the scientific high school of Alajuela in Costa Rica. Our team combines different skills in programming and astrophysics to analyze and display an accurate depictions of the potential threat that solar storms pose to humanity so that we can be prepared at any given moment.
         </p>
-        <a href="#" class="btn">More information</a>
+        <a href="https://www.spaceappschallenge.org/2023/find-a-team/solar-sentinel" target="_blank" class="btn">See us at the hackathon!</a>
     </section>
     <section class="content satellite">
         <article class="contain">
@@ -124,6 +103,8 @@
     <section class="content contact">
         <h2 class="title" id="contact"> CONTACT US BY: </h2>
         <p> contact@solarsentinel.co</p>
+        <figure class="map">
+        </figure>
     </section>
 
 
