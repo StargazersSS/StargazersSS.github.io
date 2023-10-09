@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.drag-area{
+    border: 5px dashed #ddd;
+    height: 500px;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.drag-area.active{
+    background-color: #b8d4fe ;
+    color: #101010;
+    border: 2px dashed #a6261b;
+}
+
+.drag-area h2  {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.drag-area span {
+    font-size: 25px ;
+    font-weight: 500;
+    color: #ddd;
+}
+
+.drag-area button{
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background-color: #a6261b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px #ddd;
+    
+}
+
+#preview{
+    margin-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .date-selector {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  
+  /* Estilos para los campos de fecha */
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+
+.status-text{
+    padding: 0 10 px;
+}
+
+.sucess{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
+
+.header {
+    padding: 12% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background: #691b0a;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.words {
+    display: flex;
+    margin-right: auto;
+    color: #fff;
+    font-size: 20px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo a{
+    margin-left: 40px;
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 23px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase ;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #5a1809;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header{
+    height: 60vh !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(166, 38, 27, 0.25)),url(img/tormenta-magnetica-presento-martes-mayo.jpg);
+    
+    background-size: cover;
+    
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 50px ;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 30px ;
+    font-weight: 600;
+    text-transform:uppercase;
+    color:#fff;
+}
+
+p {
+    margin-bottom: 1px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.defaults{
+    margin-bottom: 1px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.btn{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #832017;
+    color: #fff;
+    text-decoration: none;
+    background: #a6261b;
+}
+
+.btn:hover{
+    background: none;
+}
+
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start {
+    padding: 13% 15%;
+    background: #1f1d1d
+}
+
+.sau {
+    padding: 30px;
+    background: #171717;
+}
+
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+  }
+  
+  .swipe-up {
+    font-size: 24px;
+    color: #c4c4c4;
+    animation: moveUp 1.5s infinite alternate; /* Agregamos la animación llamada "moveUp" */
+  }
+  
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px); /* Mueve el texto hacia arriba 20px */
+    }
+  }
+
+  
+  
+.box-container .box{
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+} 
+
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #691b0a;
+    font-size: 2rem;
+    margin: 1rem 0;
+} 
+
+.box-container .box h3{
+    font-size: 20px;
+    color: #691b0a;
+
+} 
+
+.box-container .box p{
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about{
+    background: #1f1d1d;
+}
+.satellite {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(166, 38, 27, 0.3)),url(img/satelite.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+} 
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+} 
+
+footer {
+    background-color: #450c0c; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado interior del footer */
+}
+
+
+
+@media  (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    } 
+
+    .sau {
+        height: 120vh;
+    }
+    
+    .navbar {
+        display: none;
+    }
+}
+
+
+label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+  
+  input,
+label {
+    margin: 0.4rem 0;
+  }
+  
